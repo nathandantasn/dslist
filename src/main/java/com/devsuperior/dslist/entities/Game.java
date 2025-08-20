@@ -14,6 +14,10 @@ import jakarta.persistence.Table;
 @Table(name = "tb_game") //definindo o nome da tabela da entidade
 public class Game {
 	
+	public Game() {
+	
+	}
+
 	@Id //definindo o ID
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //definindo o tipo de ID
 	private Long id;
@@ -81,7 +85,7 @@ public class Game {
 		return platforms;
 	}
 
-	public void setPlatform(String platform) {
+	public void setPlatform(String platforms) {
 		this.platforms = platforms;
 	}
 
